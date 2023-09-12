@@ -1,4 +1,4 @@
-name: 'Check spelling'
+name: "Check spelling"
 on: # rebuild any PRs and main branch changes
   push:
     branches-ignore:
@@ -12,8 +12,8 @@ jobs:
   spellcheck:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: streetsidesoftware/cspell-action@v2
+      - uses: actions/checkout@v4
+      - uses: streetsidesoftware/cspell-action@v3
         with:
           inline: warning
           strict: false
